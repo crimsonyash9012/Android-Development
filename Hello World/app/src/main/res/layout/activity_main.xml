@@ -1,0 +1,32 @@
+xml<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myBtn"
+        android:text="Click for fun"
+        android:textSize="30sp"
+        android:layout_margin="65dp"
+        android:textAlignment="gravity"
+        android:shadowColor="@color/black"
+        android:textStyle="italic"
+        android:padding="50dp"
+        android:clickable="true"
+        android:enabled="true"
+
+    <ImageView
+        android:id="@+id/newImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/newImg"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
