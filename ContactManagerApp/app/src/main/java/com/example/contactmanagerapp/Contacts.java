@@ -1,0 +1,51 @@
+package com.example.contactmanagerapp;
+
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "contacts_table")  //  fundamental component that represents a table in SQLite database
+public class Contacts {
+
+    @ColumnInfo(name = "contact_id") // specify additional details about mapping of a field, property or variable to and entity class
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    @ColumnInfo(name = "contact_name")
+    private String name;
+
+    @ColumnInfo(name = "contact_email")
+    private String email;
+
+    public Contacts( String name, String email) {
+        this.name = name;
+        this.email = email;
+    }
+
+    public Contacts() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+}
